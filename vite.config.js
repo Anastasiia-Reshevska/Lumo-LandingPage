@@ -14,5 +14,12 @@ export default defineConfig({
           '~font' : path.resolve(__dirname, 'resources/fonts'),
           '~images' : path.resolve(__dirname, 'resources/images'),
         }
-      }
+      },
+      css: {
+        preprocessorOptions: {
+          scss: {
+            api: 'modern-compiler'
+          }
+        }
+      }   
 });

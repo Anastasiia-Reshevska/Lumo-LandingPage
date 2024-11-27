@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends ('layouts.app')
 
-@section('title', 'Lumo')
+@section ('title', 'Lumo')
 
 @section ('header')
     @include ('components.header.index') 

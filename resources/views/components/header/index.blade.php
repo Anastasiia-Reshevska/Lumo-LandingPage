@@ -23,15 +23,16 @@
                     <a href="/" class="header__nav-link">LUMO SHOP</a>
                 </li>
             </ul>
-            <div class=" header__nav-item_button">
-                <button class="btn-primary header__btn_book header__btn_main">BOOK YOUR SEAT
+            <div class="header__nav-item_button">
+                <button class="btn-primary header__btn-book header__btn-main">
+                    <p>BOOK YOUR SEAT</p>
                     <div class="header__arrow" aria-hidden="true">
                         <div class="header__arrow_direction"></div>
                     </div>
                 </button>
             </div>
         </div>
-        <button class="btn-primary header__btn_book header__btn_additional">BOOK YOUR SEAT
+        <button class="btn-primary header__btn-book header__btn-additional">BOOK YOUR SEAT
             <div class="header__arrow" aria-hidden="true">
                 <div class="header__arrow_direction"></div>
             </div>

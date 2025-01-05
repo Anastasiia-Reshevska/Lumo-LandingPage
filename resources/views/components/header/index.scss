@@ -1,5 +1,9 @@
 /*  Header */
 .header {
+  position: absolute;
+  left: 0;
+  right: 0;
+
   &__container {
     position: relative;
     display: flex;
@@ -10,7 +14,7 @@
     @media (min-width: 768px) {
       justify-content: space-between;
       padding-right: 70px;
-      margin: 48px 10px 0 61px;
+      margin: 48px 27px 0 30px;
     }
 
     @media (min-width: 992px) {
@@ -20,8 +24,7 @@
 
     @media (min-width: 1400px) {
       justify-content: space-between;
-      margin-right: 59px;
-      margin-left: 61px;
+      margin: 44px 59px 0 52px;
     }
   }
 
@@ -29,6 +32,8 @@
     img {
       width: 140px;
       height: 56px;
+      margin-top: 6px;
+      margin-left: 7px;
 
       @media (min-width: 768px) {
         width: 184px;
@@ -43,6 +48,7 @@
 
     @media (min-width: 992px) {
       display: flex;
+      z-index: 1;
     }
 
     &__nav:not(:first-child) {
@@ -52,31 +58,33 @@
     }
 
     ul li:not(:first-child) {
-      margin-right: 30px;
       padding-top: 19px;
 
-      @media (min-width:992px) {
+      @media (min-width: 991px) {
         margin-right: 15px;
         padding-top: 0;
       }
     }
 
     ul {
-      padding-left: 0;
+      padding-left: 30px;
+      margin-top: 106px;
 
       @media (min-width: 992px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding-left: 0;
+        margin-top: 25px;
       }
 
       li {
         padding-top: 9px;
-        padding-left: 27px;
+        padding-left: 7px;
         padding-right: 5px;
         letter-spacing: 4px;
-        font-family: "Montserrat", Arial, sans-serif;
+        font-family: 'Montserrat', Arial, sans-serif;
         list-style-type: none;
 
         @media (min-width: 992px) {
@@ -92,7 +100,7 @@
         a {
           margin: 10px 15px;
           font-weight: 700;
-          color: #333C4F;
+          color: #333c4f;
           text-decoration: none;
           line-height: 73px;
           border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -105,7 +113,7 @@
 
           @media (min-width: 992px) and (max-width: 1200px) {
             margin: 0px 0px 0px 15px;
-           }
+          }
 
           &:hover {
             border-bottom: 2px solid black;
@@ -117,12 +125,8 @@
 
   // Buttons
   &__btn-book {
-    position: relative;
-    color: aliceblue;
     -webkit-text-stroke-width: 0.04em;
     -webkit-text-stroke-color: black;
-    background-color: #333C4F;
-    border: #333C4F;
 
     @media (min-width: 992px) {
       display: block;
@@ -136,18 +140,46 @@
       text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
     }
 
+    .arrow {
+      bottom: 12px;
+      margin-left: 0;
+
+      @media (min-width: 768px) {
+        bottom: 8px;
+        left: 4px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+        display: none;
+      }
+    }
+
     &:hover {
-      color: #333C4F;
-      background-color: #FFFF;
+      color: #479cfc;
+      background-color: #ffff;
+    }
+
+    &:hover {
+      .arrow_direction,
+      .arrow_direction::before,
+      .arrow_direction::after {
+        background-color: #479cfc;
+      }
     }
   }
 
   &__btn-main {
     display: block;
     width: 310px;
+    max-width: 100%;
     height: 60px;
     margin: 63px auto 0 auto;
-    font-size: 14px;
+
+    .arrow {
+      @media (min-width: 768px) {
+        bottom: 12px;
+      }
+    }
 
     @media (min-width: 992px) {
       display: none;
@@ -155,6 +187,7 @@
   }
 
   &__btn-additional {
+    z-index: 2;
     display: none;
     width: 310px;
     height: 50px;
@@ -163,80 +196,21 @@
     @media (min-width: 768px) {
       display: block;
       max-width: 223px;
-      margin: 9px 0px 10px 0;
+      margin: 3px 24px 10px 0;
       font-size: 12px;
     }
 
-    @media (min-width:992px) and (max-width:1200px) {
+    @media (min-width: 992px) and (max-width: 1200px) {
       max-width: 190px;
     }
 
     @media (min-width: 1200px) {
       margin-top: 14px;
+      margin-right: 1px;
     }
 
-    &__arrow_direction {
+    .arrow_direction {
       width: 10px;
-    }
-  }
-
-  &__arrow {
-    position: absolute;
-    bottom: 15px;
-    width: 35px;
-    height: 35px;
-    margin-left: 16px;
-    cursor: pointer;
-
-    @media (min-width: 768px) {
-      bottom: 11px;
-    }
-
-    @media (min-width: 992px) {
-      display: none;
-    }
-
-    @media (min-width: 1200px) {
-      display: block;
-      left: -3px;
-    }
-  }
-
-  &__arrow_direction {
-    position: relative;
-    display: block;
-    top: 20px;
-    left: 10px;
-    width: 15px;
-    height: 1px;
-    background-color: #FFFF;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-
-    @media (min-width:992px) and (max-width:1200px) {
-      width: 11px;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: -2px;
-      right: -3px;
-      width: 7px;
-      height: 1px;
-      background-color: #FFFF;
-      transform: rotate(45deg);
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 3px;
-      right: -2px;
-      width: 7px;
-      height: 1px;
-      background-color: #FFFF;
-      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-      transform: rotate(-45deg);
     }
   }
 }
@@ -249,7 +223,7 @@
   height: 50px;
   width: 50px;
   padding: 0;
-  background-color: white;
+  background: none;
   border: white;
   cursor: pointer;
 
@@ -260,12 +234,12 @@
 
 .burger__lines {
   position: relative;
+  z-index: 50;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 29px;
-  z-index: 50;
 
   &::before,
   &::after {
@@ -301,8 +275,15 @@
   }
 }
 
-html .open-menu {
+.open-menu .header__navigation {
   @media (max-width: 992px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 100%;
+    height: 100%;
     background-color: #479cfc;
   }
 }
@@ -326,15 +307,12 @@ body .open-menu {
     }
   }
 
-  .header__arrow {
-    bottom: 15px;
-  }
-
   .burger {
     @media (max-width: 992px) {
       width: 43px;
       height: 43px;
       right: 0;
+      z-index: 6;
       background-color: #333c4f;
       border-radius: 50%;
 
@@ -350,7 +328,7 @@ body .open-menu {
       left: 1%;
       width: 23px;
       height: 2px;
-      background-color: #FFFF;
+      background-color: #ffff;
     }
   }
 
@@ -362,19 +340,13 @@ body .open-menu {
       bottom: 18px;
       width: 23px;
       height: 2px;
-      background-color: #FFFF;
+      background-color: #ffff;
     }
   }
 
   .header__navigation {
-    @media (max-width: 992px) and (max-width: 1200){ 
+    @media (max-width: 992px) and (max-width: 1200) {
       font-size: 10px;
-    }
-    @media (max-width: 992px) {
-      position: relative;
-      display: block;
-      width: 100%;
-      margin-top: 50px;
     }
   }
 

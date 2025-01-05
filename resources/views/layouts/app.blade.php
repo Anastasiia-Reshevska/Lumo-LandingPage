@@ -14,6 +14,11 @@
 
 <body>
     @yield('header')
+    <main role="main" class="main">
+        <div class="main__container">
+            @yield('content')
+        </div>
+    </main>
 </body>
 
 </html>

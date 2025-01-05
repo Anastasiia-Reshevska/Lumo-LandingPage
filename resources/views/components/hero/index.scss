@@ -1,0 +1,238 @@
+/* Content*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  color: #333c4f;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 0;
+  }
+
+  &__content {
+    margin-top: 35px;
+
+    @media (min-width: 768px) {
+      height: 100%;
+      width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 145px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 60px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 7px;
+    font-size: 12px;
+    color: #333c4f;
+    text-align: center;
+    letter-spacing: 4px;
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  h1 {
+    text-align: center; 
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 27px;
+    font-weight: 900;
+    font-size: 30px;
+    color: #333c4f;
+    line-height: 36px;
+
+    @media (min-width: 768px) {
+      position: absolute;
+      width: 621px;
+      padding-left: 50px;
+      font-size: 46px;
+      text-align: center;
+      line-height: 53px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      right: 273px; 
+      transform: rotate(-90deg);
+    }
+
+    @media (min-width: 992px) {
+      position: unset;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      padding-left: 0;
+      text-align: left;
+    }
+
+    @media (min-width: 1200px) {
+      width: 621px;
+    }
+
+    span {
+      color: #479cfc;
+    }
+  }
+
+  &__subtitle {
+    margin: 31px 71px 0 70px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      margin-left: 0;
+      margin-top: 27px;
+      font-size: 24px;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    margin-top: 38px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #479cfc;
+    text-align: center;
+    letter-spacing: 3px;
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: 53px;  
+      font-size: 12px;
+      letter-spacing: 4px;
+    }
+  }
+
+  /* Buttons*/
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    @media (min-width: 992px) {
+      margin-top: 45px;
+    }
+  }
+
+  .btn-primary {
+    @media (min-width: 768px) and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .btn-gray {
+    @media (min-width: 768px) and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__btn-main {
+    width: 277px;
+    height: 50px;
+    margin-top: 28px;
+    padding-left: 20px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: none;
+    }
+
+    &:hover {
+        background-color: #479cfc;
+        border-color: #479cfc;
+    }
+    
+    .arrow {
+      bottom: 7px;
+      left: 2px;
+    }
+  }
+
+/* Image*/
+  &__image {
+    @media (min-width: 768px) {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      height: 904px;
+      width: 536px;
+      background: #479cfc;
+      border-radius: 58px;
+    }
+
+    @media (min-width: 992px) {
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+    }
+
+    @media (min-width: 1400px) {
+      width: 710px;
+    }
+
+    &::before {
+      @media (min-width: 768px) {
+        content: '';
+        position: absolute;
+        width: 404px;
+        height: 598px;
+        bottom: 80px;
+        margin-left: 32px;
+        border: 6px solid #333c4f;
+      }
+
+      @media (min-width: 992px) {
+        width: 448px;
+        margin-left: 22px;
+      }
+    }
+
+    &::after {
+      @media (min-width: 768px) {
+        content: '';
+        position: absolute;
+        height: 776px;
+        width: 518px;
+        right: 0;
+        bottom: 0;
+        background-image: url('/resources/images/hero.webp');
+        background-repeat: no-repeat;
+      }
+
+      @media (min-width: 992px) {
+        height: 759px;
+        width: 566px;
+        right: inherit;
+        margin-left: 10px;
+        background-image: url('/resources/images/hero_desktop.webp');
+      }
+    }
+  }
+}

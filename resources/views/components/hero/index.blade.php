@@ -1,0 +1,18 @@
+<section class="hero">
+    <div class="hero__content">
+        <h3>EMBRACE THE CHILL</h3>
+        <h1>LUMO’S <span>WINTER FEST</span> COLLECTION <span>2024-2025</span></h1>
+        <p class="hero__subtitle">Stay warm, stylish, and ready for winter.</p>
+        <div class="hero__button">
+            <button class="btn-primary btn-gray hero__btn-main">
+                PREP FOR THE WINTERFEST
+                <div class="arrow" aria-hidden="true">
+                    <div class="arrow_direction"></div>
+                </div>
+            </button>
+        </div>
+        <p class="hero__text">CHECK LAST YEAR’S EDITION</p>
+    </div>
+    <div class="hero__image" aria-label="Image hero">
+    </div>
+</section>

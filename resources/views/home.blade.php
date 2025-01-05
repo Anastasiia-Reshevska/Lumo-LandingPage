@@ -6,3 +6,7 @@
     @include ('components.header.index') 
 @endsection
 
+@section ('content')
+    @include ('components.hero.index') 
+@endsection
+

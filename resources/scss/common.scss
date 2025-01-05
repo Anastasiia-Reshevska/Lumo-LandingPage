@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  font-family: $font-primary;
+}
+
 .btn-primary {
   display: inline-block;
   font-family: $font-primary;
@@ -17,3 +21,61 @@ body {
   cursor: pointer;
   white-space: wrap;
 }
+
+.btn-gray {
+  position: relative;
+  font-size: 12px;
+  color: aliceblue;
+  background-color: #333C4F;
+  border: #333C4F;
+}
+
+.arrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.arrow_direction {
+  position: relative;
+  display: block;
+  top: 17px;
+  left: 16px;
+  width: 9px;
+  height: 1px;
+  background-color: #FFFF;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+
+  @media (max-width:991px) {
+    width: 16px;
+  }
+
+  @media (min-width:992px) and (max-width:1200px) {
+    width: 11px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    width: 7px;
+    height: 1px;
+    background-color: #FFFF;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: -2px;
+    width: 7px;
+    height: 1px;
+    background-color: #FFFF;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+  }
+}
+

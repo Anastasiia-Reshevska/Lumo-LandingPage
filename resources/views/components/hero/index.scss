@@ -38,9 +38,10 @@
     }
   }
 
-  h3 {
+  &__tagline {
     margin-bottom: 7px;
     font-size: 12px;
+    font-weight: 700;
     color: #333c4f;
     text-align: center;
     letter-spacing: 4px;
@@ -50,7 +51,7 @@
     }
   }
 
-  h1 {
+  &__title {
     text-align: center; 
     padding-right: 16px;
     padding-left: 16px;

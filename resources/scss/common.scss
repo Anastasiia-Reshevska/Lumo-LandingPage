@@ -55,7 +55,8 @@ body {
     width: 11px;
   }
 
-  &::after {
+  &::after,
+  &::before {
     content: '';
     position: absolute;
     top: -2px;
@@ -63,6 +64,11 @@ body {
     width: 7px;
     height: 1px;
     background-color: #FFFF;
+  }
+
+  &::after {
+    top: -2px;
+    right: -2px;
     transform: rotate(45deg);
   }
 
@@ -71,9 +77,6 @@ body {
     position: absolute;
     top: 2px;
     right: -2px;
-    width: 7px;
-    height: 1px;
-    background-color: #FFFF;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
     transform: rotate(-45deg);
   }

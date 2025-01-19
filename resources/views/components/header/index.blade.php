@@ -27,14 +27,14 @@
                 <button class="btn-primary btn-gray header__btn-book header__btn-main">
                     <p>BOOK YOUR SEAT</p>
                     <div class="arrow arrow__button-burger" aria-hidden="true">
-                        <div class="arrow_direction"></div>
+                        <div class="arrow__direction"></div>
                     </div>
                 </button>
             </div>
         </div>
         <button class="btn-primary btn-gray header__btn-book header__btn-additional">BOOK YOUR SEAT
             <div class="arrow" aria-hidden="true">
-                <div class="arrow_direction"></div>
+                <div class="arrow__direction"></div>
             </div>
         </button>
     </div>

@@ -37,7 +37,7 @@ body {
   cursor: pointer;
 }
 
-.arrow_direction {
+.arrow__direction {
   position: relative;
   display: block;
   top: 17px;
@@ -59,7 +59,7 @@ body {
     content: '';
     position: absolute;
     top: -2px;
-    right: -3px;
+    right: -2px;
     width: 7px;
     height: 1px;
     background-color: #FFFF;
@@ -69,7 +69,7 @@ body {
   &::before {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 2px;
     right: -2px;
     width: 7px;
     height: 1px;

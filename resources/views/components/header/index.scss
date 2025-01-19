@@ -160,9 +160,9 @@
     }
 
     &:hover {
-      .arrow_direction,
-      .arrow_direction::before,
-      .arrow_direction::after {
+      .arrow__direction,
+      .arrow__direction::before,
+      .arrow__direction::after {
         background-color: #479cfc;
       }
     }
@@ -209,7 +209,7 @@
       margin-right: 1px;
     }
 
-    .arrow_direction {
+    .arrow__direction {
       width: 10px;
     }
   }

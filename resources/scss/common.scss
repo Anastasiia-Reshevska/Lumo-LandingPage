@@ -6,6 +6,7 @@ html {
 
 body {
   overflow-x: hidden;
+  min-width: 360px;
 }
 
 .main {
@@ -20,6 +21,7 @@ body {
   transition: 0.2s ease all;
   cursor: pointer;
   white-space: wrap;
+  box-shadow: 0 4px 16px rgba(51, 60, 79, 0.3);
 }
 
 .btn-gray {

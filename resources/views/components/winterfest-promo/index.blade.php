@@ -6,26 +6,26 @@
   <div class="winterfest-promo__images">
     <div class="winterfest-promo__image">
       <picture>
-        <source srcset="{{ Vite::asset('resources/images/winterfest-promo-img-top-left-tablet.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
-        <img src= "{{ Vite::asset('resources/images/winterfest-promo-img-top-left-mobile-desktop.webp') }}" alt=""/>
+        <source srcset="{{ Vite::asset('resources/images/wp-top-left-368x248.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
+        <img src= "{{ Vite::asset('resources/images/wp-top-left-188x127.webp') }}" alt=""/>
       </picture>
     </div>
     <div class="winterfest-promo__image">
       <picture>
-        <source srcset="{{ Vite::asset('resources/images/winterfest-promo-img-top-right-tablet.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
-        <img src= "{{ Vite::asset('resources/images/winterfest-promo-img-top-right-mobile-desktop.webp') }}" alt="" />
+        <source srcset="{{ Vite::asset('resources/images/wp-top-right-370x249.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
+        <img src= "{{ Vite::asset('resources/images/wp-top-right-190x127.webp') }}" alt="" />
       </picture>
     </div>
     <div class="winterfest-promo__image">
       <picture>
-        <source srcset="{{ Vite::asset('resources/images/winterfest-promo-img-bottom-left-tablet.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
-        <img src= "{{ Vite::asset('resources/images/winterfest-promo-img-bottom-left-mobile-desktop.webp') }}" alt="" />
+        <source srcset="{{ Vite::asset('resources/images/wp-bottom-left-368x248.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
+        <img src= "{{ Vite::asset('resources/images/wp-bottom-left-188x127.webp') }}" alt="" />
       </picture>
     </div>
     <div class="winterfest-promo__image">
       <picture>
-        <source srcset="{{ Vite::asset('resources/images/winterfest-promo-img-bottom-right-tablet.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
-        <img src= "{{ Vite::asset('resources/images/winterfest-promo-img-bottom-right-mobile-desktop.webp') }}" alt="" />
+        <source srcset="{{ Vite::asset('resources/images/wp-bottom-right-370x249.webp') }}" media="(min-width: 767px) and (max-width: 991px)" />
+        <img src= "{{ Vite::asset('resources/images/wp-bottom-right-190x127.webp') }}" alt="" />
       </picture>
     </div>
   </div>

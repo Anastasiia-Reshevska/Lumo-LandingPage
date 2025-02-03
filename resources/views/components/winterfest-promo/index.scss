@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 71px;
+    padding-top: 71px;
   }
 
   /* Content*/
@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 15px;
+    padding-top: 15px;
     color: $c-primary;
 
     @media (min-width: $xl-min) {
@@ -22,6 +22,8 @@
     }
 
     @media (min-width: $xl-min) {
+      justify-content: space-between;
+      max-width: 50%;
       margin-top: 0;
     }
   }
@@ -45,6 +47,7 @@
 
     @media (min-width: $xl-min) {
       margin: 66px 0 22px 0;
+      padding-right: 15px;
     }
   }
 
@@ -57,14 +60,14 @@
     text-align: center;
 
     @media (min-width: $sm-max) {
-      padding: 0px 50px 0 57px;
-      margin: 22px 0 23px 0;
+      padding: 0 50px 0 57px;
+      margin: 22px 0 23px;
       font-size: $f-size-text-ml;
       line-height: 1.62;
     }
 
     @media (min-width: $xl-min) {
-      padding: 0 134px 0 0;
+      padding: 0 10px 0 0;
       text-align: left;
     }
   }
@@ -87,7 +90,7 @@
       row-gap: 14px;
       column-gap: 25px;
       width: 538px;
-      margin-top: 30px;
+      margin: 30px 0 0 auto;
     }
   }
 

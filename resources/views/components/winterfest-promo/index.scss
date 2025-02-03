@@ -1,0 +1,99 @@
+.winterfest-promo {
+  @media (min-width: $xl-min) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 71px;
+  }
+
+  /* Content*/
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    color: $c-primary;
+
+    @media (min-width: $xl-min) {
+      flex: 1;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    @media (min-width: $xl-min) {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    font-size: $f-size-subtitle-sm;
+    font-weight: 900;
+    text-align: center;
+    padding: 0 106px 0 108px;
+    margin: 44px 0 8px 0;
+
+    @media (min-width: $sm-max) {
+      padding: 0;
+      margin-top: 59px;
+      font-size: $f-size-subtitle-lg;
+    }
+
+    @media (min-width: $md-max) {
+      text-align: left;
+    }
+
+    @media (min-width: $xl-min) {
+      margin: 66px 0 22px 0;
+    }
+  }
+
+  &__text {
+    margin-bottom: 22px;
+    font-size: $f-size-text-xs;
+    font-weight: 400;
+    line-height: 1.67;
+    color: $c-text;
+    text-align: center;
+
+    @media (min-width: $sm-max) {
+      padding: 0px 50px 0 57px;
+      margin: 22px 0 23px 0;
+      font-size: $f-size-text-ml;
+      line-height: 1.62;
+    }
+
+    @media (min-width: $xl-min) {
+      padding: 0 134px 0 0;
+      text-align: left;
+    }
+  }
+  /* Image*/
+  &__images {
+    display: grid;
+    column-gap: 12px;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    max-width: 761px;
+    margin: 17px auto 0;
+
+    @media (min-width: $md-min) {
+      column-gap: 21px;
+      row-gap: 24px;
+      margin-top: 24px;
+    }
+
+    @media (min-width: $xl-min) {
+      row-gap: 14px;
+      column-gap: 25px;
+      width: 538px;
+      margin-top: 30px;
+    }
+  }
+
+  &__image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+}

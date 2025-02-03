@@ -8,5 +8,6 @@
 
 @section ('content')
     @include ('components.hero.index') 
+    @include ('components.winterfest-promo.index') 
 @endsection
 

@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 150px;
-  color: #333c4f;
+  color: $c-primary;
 
-  @media (min-width: 768px) {
+  @media (min-width: $md-min) {
     flex-direction: row;
     padding-top: 0;
   }
@@ -15,12 +15,12 @@
   &__content {
     margin-top: 35px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md-min) {
       height: 100%;
       width: 100%;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $lg-min) {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -28,25 +28,25 @@
       margin-top: 145px;
     }
 
-    @media (min-width: 992px) and (max-width: 1199px) {
+    @media (min-width: $lg-min) and (max-width: $lg-max) {
       padding-left: 20px;
       padding-right: 10px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl-min) {
       margin-left: 60px;
     }
   }
 
   &__tagline {
     margin-bottom: 7px;
-    font-size: 12px;
+    font-size: $f-size-text-xs;
     font-weight: 700;
-    color: #333c4f;
+    color: $c-primary;
     text-align: center;
     letter-spacing: 4px;
     
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: $md-min) and (max-width: $md-max) {
       display: none;
     }
   }
@@ -57,25 +57,25 @@
     padding-left: 16px;
     margin-top: 27px;
     font-weight: 900;
-    font-size: 30px;
-    color: #333c4f;
-    line-height: 36px;
+    font-size: $f-size-title-xs;
+    color: $c-primary;
+    line-height: 1.2;
 
-    @media (min-width: 768px) {
+    @media (min-width: $md-min) {
       position: absolute;
       width: 621px;
-      padding-left: 50px;
-      font-size: 46px;
+      padding-left: 21px;
+      font-size: $f-size-subtitle-lg;
       text-align: center;
-      line-height: 53px;
+      line-height: 1.1;
     }
 
-    @media (min-width: 768px) and (max-width: 991px) {
-      right: 273px; 
+    @media (min-width: $md-min) and (max-width: $md-max) {
+      right: 304px; 
       transform: rotate(-90deg);
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $lg-min) {
       position: unset;
       width: 100%;
       margin-left: 0;
@@ -84,48 +84,48 @@
       text-align: left;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $xl-min) {
       width: 621px;
     }
 
     span {
-      color: #479cfc;
+      color: $c-info-hover;
     }
   }
 
   &__subtitle {
     margin: 31px 71px 0 70px;
-    font-size: 20px;
+    font-size: $f-size-nav-ml;
     font-weight: 300;
     text-align: center;
 
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: $md-min) and (max-width: $md-max) {
       display: none;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $lg-min) {
       margin-left: 0;
       margin-top: 27px;
-      font-size: 24px;
+      font-size: $f-size-subtitle-xs;
       text-align: left;
     }
   }
 
   &__text {
     margin-top: 38px;
-    font-size: 10px;
+    font-size: $f-size-nav-xs;
     font-weight: 700;
-    color: #479cfc;
+    color: $c-info-hover;
     text-align: center;
     letter-spacing: 3px;
     
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: $md-min) and (max-width: $md-max) {
       display: none;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $lg-min) {
       margin-top: 53px;  
-      font-size: 12px;
+      font-size: $f-size-text-xs;
       letter-spacing: 4px;
     }
   }
@@ -137,19 +137,19 @@
     align-items: center;
     margin-top: 20px;
 
-    @media (min-width: 992px) {
+    @media (min-width: $lg-min) {
       margin-top: 45px;
     }
   }
 
   .btn-primary {
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: $md-min) and (max-width: $md-max) {
       display: none;
     }
   }
 
   .btn-gray {
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: $md-min) and (max-width: $md-max) {
       display: none;
     }
   }
@@ -160,13 +160,13 @@
     margin-top: 28px;
     padding-left: 20px;
 
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: $md-min) and (max-width: $md-max) {
         display: none;
     }
 
     &:hover {
-        background-color: #479cfc;
-        border-color: #479cfc;
+        background-color: $c-info-hover;
+        border-color: $c-info-hover;
     }
     
     .arrow {
@@ -177,7 +177,7 @@
 
 /* Image*/
   &__image {
-    @media (min-width: 768px) {
+    @media (min-width: $md-min) {
       position: relative;
       display: flex;
       justify-content: center;
@@ -185,38 +185,39 @@
       flex-shrink: 0;
       height: 904px;
       width: 536px;
-      background: #479cfc;
+      background: $c-info-hover;
       border-radius: 58px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $lg-min) {
       border-top-left-radius: 0%;
       border-bottom-left-radius: 0%;
+      border-bottom-right-radius: 0%;
     }
 
-    @media (min-width: 1400px) {
+    @media (min-width: $xll-min) {
       width: 710px;
     }
 
     &::before {
-      @media (min-width: 768px) {
+      @media (min-width: $md-min) {
         content: '';
         position: absolute;
-        width: 404px;
-        height: 598px;
+        width: 415px;
+        height: 611px;
         bottom: 80px;
         margin-left: 32px;
-        border: 6px solid #333c4f;
+        border: 6px solid $c-primary;
       }
 
-      @media (min-width: 992px) {
-        width: 448px;
+      @media (min-width: $lg-min) {
+        width: 458px;
         margin-left: 22px;
       }
     }
 
     &::after {
-      @media (min-width: 768px) {
+      @media (min-width: $md-min) {
         content: '';
         position: absolute;
         height: 776px;
@@ -227,7 +228,7 @@
         background-repeat: no-repeat;
       }
 
-      @media (min-width: 992px) {
+      @media (min-width: $lg-min) {
         height: 759px;
         width: 566px;
         right: inherit;

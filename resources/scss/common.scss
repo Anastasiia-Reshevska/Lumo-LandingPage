@@ -52,16 +52,18 @@ body {
   position: absolute;
   cursor: pointer;
 }
+
 .arrow--small {
   width: 24px;
   height: 24px;
 }
-.arrow_size-m {
+
+.arrow--medium {
   width: 35px;
   height: 35px;
 }
 
-.arrow_size-l {
+.arrow--large {
   width: 49px;
   height: 49px;
 }
@@ -89,7 +91,7 @@ body {
   }
 }
 
-.arrow_white {
+.arrow__direction--white {
   top: 17px;
   left: 16px;
   width: 9px;
@@ -124,7 +126,7 @@ body {
   }
 }
 
-.arrow_grey-m {
+.arrow__direction--grey-medium {
   top: 27px;
   left: 16px;
   width: 22px;

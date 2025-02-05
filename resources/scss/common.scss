@@ -1,7 +1,7 @@
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,6 +11,10 @@ html {
 body {
   overflow-x: hidden;
   min-width: 360px;
+
+  @media (min-width: $md-min) {
+    background-color: $c-background;
+  }
 }
 
 .main {
@@ -38,33 +42,58 @@ body {
 
 .arrow {
   position: absolute;
+  cursor: pointer;
+}
+.arrow_size-m {
   width: 35px;
   height: 35px;
-  cursor: pointer;
+}
+
+.arrow_size-l {
+  width: 49px;
+  height: 49px;
 }
 
 .arrow__direction {
   position: relative;
   display: block;
-  top: 17px;
-  left: 16px;
-  width: 9px;
-  height: 1px;
-  background-color: $c-arrow;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-
-  @media (max-width:$md-max) {
-    width: 16px;
-  }
-
-  @media (min-width:$lg-min) and (max-width:$xl-min) {
-    width: 11px;
-  }
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 
   &::after,
   &::before {
     content: '';
     position: absolute;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(-45deg);
+  }
+}
+
+.arrow_white {
+  top: 17px;
+  left: 16px;
+  width: 9px;
+  height: 1px;
+  background-color: $c-arrow;
+
+  @media (max-width: $md-max) {
+    width: 16px;
+  }
+
+  @media (min-width: $lg-min) and (max-width: $xl-min) {
+    width: 11px;
+  }
+
+  &::after,
+  &::before {
     top: -2px;
     right: -2px;
     width: 7px;
@@ -75,30 +104,49 @@ body {
   &::after {
     top: -2px;
     right: -2px;
-    transform: rotate(45deg);
   }
 
   &::before {
-    content: '';
-    position: absolute;
     top: 2px;
     right: -2px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-    transform: rotate(-45deg);
   }
 }
 
-.conteiner {
+.arrow_grey-m {
+  top: 27px;
+  left: 16px;
+  width: 22px;
+  height: 2px;
+  background-color: $c-primary;
+
+  &::after,
+  &::before {
+    top: -2px;
+    right: -2px;
+    width: 11px;
+    height: 2px;
+    background-color: $c-primary;
+  }
+
+  &::after {
+    top: -4px;
+    right: -1px;
+  }
+
+  &::before {
+    top: 4px;
+    right: -1px;
+  }
+}
+
+.container {
   padding: 0 20px;
 
   @media (min-width: $md-min) {
     padding: 0 38px;
-    background-color: #F5F5F5;
   }
 
   @media (min-width: $xl-min) {
     padding: 0 60px;
   }
-
 }
-

@@ -6,6 +6,7 @@
   align-items: center;
   padding-top: 150px;
   color: $c-primary;
+  background-color: $c-arrow;
 
   @media (min-width: $md-min) {
     flex-direction: row;

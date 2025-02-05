@@ -6,8 +6,8 @@
         <div class="hero__button">
             <button class="btn-primary btn-gray hero__btn-main">
                 PREP FOR THE WINTERFEST
-                <div class="arrow" aria-hidden="true">
-                    <div class="arrow__direction"></div>
+                <div class="arrow arrow_size-m" aria-hidden="true">
+                    <div class="arrow__direction arrow_white"></div>
                 </div>
             </button>
         </div>

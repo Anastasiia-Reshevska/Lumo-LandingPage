@@ -9,5 +9,6 @@
 @section ('content')
     @include ('components.hero.index') 
     @include ('components.winterfest-promo.index') 
+    @include ('components.advantages-textile.index')
 @endsection
 

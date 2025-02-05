@@ -1,11 +1,16 @@
 .winterfest-promo {
+  @media (min-width: $md-min) {
+    margin-bottom: 37px;
+  } 
+
   @media (min-width: $xl-min) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 71px;
+    margin-top: 71px;
+    margin-bottom: 92px;
   }
-
+  
   /* Content*/
   &__content {
     display: flex;
@@ -25,6 +30,7 @@
       justify-content: space-between;
       max-width: 50%;
       margin-top: 0;
+      padding-top: 0;
     }
   }
 

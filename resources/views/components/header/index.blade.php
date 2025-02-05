@@ -26,15 +26,15 @@
             <div class="header__nav-item_button">
                 <button class="btn-primary btn-gray header__btn-book header__btn-main">
                     <p>BOOK YOUR SEAT</p>
-                    <div class="arrow arrow__button-burger" aria-hidden="true">
-                        <div class="arrow__direction"></div>
+                    <div class="arrow arrow_size-m arrow__button-burger" aria-hidden="true">
+                        <div class="arrow__direction arrow_white"></div>
                     </div>
                 </button>
             </div>
         </div>
         <button class="btn-primary btn-gray header__btn-book header__btn-additional">BOOK YOUR SEAT
-            <div class="arrow" aria-hidden="true">
-                <div class="arrow__direction"></div>
+            <div class="arrow arrow_size-m" aria-hidden="true">
+                <div class="arrow__direction arrow_white"></div>
             </div>
         </button>
     </div>

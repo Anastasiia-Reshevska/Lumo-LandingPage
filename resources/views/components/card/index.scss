@@ -1,0 +1,126 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 388px;
+  margin: 38px auto 0;
+  padding: 30px 23px 40px 30px;
+  background: $c-arrow;
+  border-radius: 40px;
+  box-shadow: 0px 4px 16px rgba(51, 60, 79, 0.16);
+
+  @media (min-width: $md-min) {
+    display: flex;
+    flex-direction: column;
+    max-width: 368px;
+    padding-right: 25px;
+    padding-left: 31px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $xxl-min) {
+    width: 315px;
+    padding-right: 38px;
+    padding-bottom: 32px;
+  }
+
+  /* Image*/
+  &__image {
+    position: relative;
+    display: inline-block;
+    width: 83px;
+    height: 83px;
+    margin: 1px 0 0 5px;
+    background-color: $c-info-hover;
+    border-radius: 50%;
+
+    img {
+      position: absolute;
+      z-index: 1;
+    }
+
+    .card__img-leather {
+      top: -4px;
+      left: 15px;
+    }
+
+    .card__img-ball-of-wool {
+      top: -12px;
+      left: 17px;
+    }
+
+    .card__img-needle {
+      top: -9px;
+      left: 10px;
+    }
+
+    .card__img-hanger {
+      top: -9px;
+    }
+  }
+
+  /* Content*/
+  &__content {
+    margin-bottom: 36px;
+
+    @media (min-width: $md-min) {
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: $xxl-min) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__title {
+    margin: 31px 0 18px;
+    font-size: $f-size-nav-ml;
+    font-weight: 700;
+    color: $c-primary;
+
+    @media (min-width: $md-min) {
+      margin-top: 32px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 26px;
+    font-size: $f-size-nav-xs;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: $c-subtitle;
+  }
+
+  &__text {
+    font-size: $f-size-text-sm;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $c-text;
+
+    @media (min-width: $md-min) {
+      line-height: 1.42;
+    }
+  }
+
+  /* Button*/
+  &__button {
+    display: block;
+    width: 57px;
+    height: 57px;
+    margin-top: auto;
+    background-color: $c-info-hover;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $c-primary;
+      transition: background-color 0.33s linear;
+    }
+
+    &:hover {
+      .arrow__direction,
+      .arrow__direction::before,
+      .arrow__direction::after {
+        background-color: $c-arrow;
+      }
+    }
+  }
+}

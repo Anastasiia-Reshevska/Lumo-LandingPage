@@ -1,0 +1,45 @@
+.discount {
+  &__wrapper {
+    background-color: $c-primary;
+    text-align: center;
+    border-radius: 40px;
+    padding: 54px 0 60px;
+  }
+  &__subtitle {
+    font-size: $f-size-text-xs;
+    font-weight: 700;
+    color: #FFFF;
+  }
+  &__title {
+    font-size: $f-size-subtitle-sm;
+    font-weight: 900;
+    color: #FFFF;
+    
+    span {
+      color: $c-info-hover;
+    }
+  }
+
+  &__btn-additional {
+    z-index: 2;
+    width: 223px;
+    height: 50px;
+    margin-left: auto;
+
+    // @media (min-width: $md-min) {
+    //   display: block;
+    //   max-width: 223px;
+    //   margin: 3px 24px 10px 0;
+    //   font-size: $f-size-text-xs;
+    // }
+
+    // @media (min-width: $lg-min) and (max-width: $xl-min) {
+    //   max-width: 190px;
+    // }
+
+    // @media (min-width: $xl-min) {
+    //   margin-top: 14px;
+    // }
+  }
+
+}

@@ -9,7 +9,7 @@
   </div>
   <a href="" class="card__button" aria-label="Find out more details">
     <div class="arrow arrow arrow_size-l" aria-hidden="true">
-      <div class="arrow__direction arrow_grey-m"></div>
+      <div class="arrow__direction arrow__direction--grey-medium"></div>
     </div>
   </a>
 </section>

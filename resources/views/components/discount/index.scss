@@ -1,0 +1,152 @@
+.discount {
+  /* Image*/
+  &__image {
+    @media (min-width: $lg-min) {
+      content: url('/resources/images/girl-with-mobile.webp');
+      position: absolute;
+      left: 16px;
+      bottom: 0;
+      width: 364px;
+      height: 388px;
+    }
+
+    @media (min-width: $xl-min) {
+      width: 548px;
+      height: 590px;
+    }
+  }
+
+  &__wrapper {
+    padding: 42px 20px 60px;
+    text-align: center;
+    background-color: $c-primary;
+    border-radius: 40px;
+
+    @media (min-width: $md-min) {
+      padding: 57px 132px 67px 121px;
+    }
+
+    @media (min-width: $lg-min) {
+      position: relative;
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: $xl-min) {
+      padding-top: 92px;
+      padding-bottom: 94px;
+    }
+  }
+
+  /* Content*/
+  &__content {
+    @media (min-width: $lg-min) {
+      display: block;
+      width: 50%;
+      padding-left: 30px;
+      margin-left: auto;
+      text-align: left;
+    }
+
+    @media (min-width: $xl-min) {
+      padding-left: 16px;
+    }
+  }
+
+  &__subtitle {
+    padding: 0 68px;
+    margin-bottom: 40px;
+    font-size: $f-size-text-xs;
+    font-weight: 700;
+    letter-spacing: 3.9px;
+    line-height: 1.2;
+    color: #FFFF;
+
+    @media (min-width: $md-min) {
+      padding-left: 10px;
+      padding-right: 16px;
+    }
+
+    @media (min-width: $lg-min) {
+      padding: 0;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__title {
+    padding-left: 5px;
+    margin-bottom: 34px;
+    font-size: $f-size-subtitle-sm;
+    font-weight: 900;
+    color: #FFFF;
+
+    @media (min-width: $md-min) {
+      padding-left: 0;
+      margin-bottom: 31px;
+      font-size: $f-size-subtitle-lg;
+    }
+
+    @media (min-width: $lg-min) {
+      max-width: 505px;
+      margin-top: 0;
+      margin-bottom: 48px;
+      font-size: $f-size-subtitle-sm;
+    }
+
+    @media (min-width: $xl-min) {
+      font-size: $f-size-subtitle-lg;
+    }
+
+    span {
+      font-size: $f-size-subtitle-m;
+      color: $c-info-hover;
+
+      @media (min-width: $md-min) and (max-width: $lg-min){
+        font-size: $f-size-subtitle-xxl;
+      }
+
+      @media (min-width: $xl-min) {
+        font-size: $f-size-subtitle-xxl;
+      }
+    }
+  }
+
+  /* Button */
+  &__btn-additional {
+    z-index: 2;
+    width: 223px;
+    height: 50px;
+    margin-left: auto;
+
+    &:hover {
+      color: $c-info-hover;
+      background-color: $c-background;
+      border-color: $c-background;
+      transition: background-color 0.33s linear;
+    }
+
+    &:hover {
+      .arrow__direction,
+      .arrow__direction::before,
+      .arrow__direction::after {
+        background-color: $c-info-hover;
+      }
+    }
+  }
+}
+
+.arrow--discount {
+  top: 14px;
+  left: 14px;
+
+  @media (min-width: $md-min) and (max-width: $xl-min) {
+    left: 16px;
+  }
+}
+
+.arrow__direction--discount {
+  top: 10px;
+  left: 3px;
+  width: 10px;
+}

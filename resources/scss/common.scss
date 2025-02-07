@@ -40,9 +40,22 @@ body {
   border: $c-primary;
 }
 
+.btn-blue-center {
+  position: relative;
+  font-size: $f-size-text-xs;
+  color: $c-text-btn;
+  background-color: $c-info-hover;
+  border: $c-primary;
+}
+
 .arrow {
   position: absolute;
   cursor: pointer;
+}
+
+.arrow--small {
+  width: 24px;
+  height: 24px;
 }
 
 .arrow--medium {

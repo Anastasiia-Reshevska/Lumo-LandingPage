@@ -163,6 +163,7 @@
     &:hover {
       color: $c-info-hover;
       background-color: $c-arrow;
+      transition: background-color 0.33s linear;
     }
 
     &:hover {
@@ -327,6 +328,7 @@ body .open-menu {
 
       &:hover {
         background-color: $c-info-hover;
+        transition: background-color 0.33s linear;
       }
     }
   }

@@ -46,14 +46,14 @@
     color: $c-primary;
     text-align: center;
     letter-spacing: 4px;
-    
+
     @media (min-width: $md-min) and (max-width: $md-max) {
       display: none;
     }
   }
 
   &__title {
-    text-align: center; 
+    text-align: center;
     padding-right: 16px;
     padding-left: 16px;
     margin-top: 27px;
@@ -72,7 +72,7 @@
     }
 
     @media (min-width: $md-min) and (max-width: $md-max) {
-      right: 304px; 
+      right: 304px;
       transform: rotate(-90deg);
     }
 
@@ -119,13 +119,13 @@
     color: $c-info-hover;
     text-align: center;
     letter-spacing: 3px;
-    
+
     @media (min-width: $md-min) and (max-width: $md-max) {
       display: none;
     }
 
     @media (min-width: $lg-min) {
-      margin-top: 53px;  
+      margin-top: 53px;
       font-size: $f-size-text-xs;
       letter-spacing: 4px;
     }
@@ -168,8 +168,9 @@
     &:hover {
         background-color: $c-info-hover;
         border-color: $c-info-hover;
+        transition: background-color 0.33s linear;
     }
-    
+
     .arrow {
       bottom: 7px;
       left: 2px;

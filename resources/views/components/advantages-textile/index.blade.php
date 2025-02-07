@@ -8,7 +8,7 @@
       'text' => 'Lumo’s Winterfest collection uses cutting-edge, weather-resistant fabrics that adapt to your environment. Stay warm without overheating, and enjoy water-repellent, windproof materials that ensure comfort in every condition.',
     ],
     [
-      'img_class' => 'card__img-ball-of-wool',
+      'img_class' => 'card__img-ball',
       'src' => Vite::asset('resources/images/ball-of-wool.svg'),
       'title' => 'Sustainable Craft',
       'subtitle' => 'ECO-FRIENDLY AND ETHICAL',
@@ -32,9 +32,9 @@
 @endphp
 
 <section class="advantages-textile container">
-  <div class="advantages-textile__wrapper">
+  <ul class="advantages-textile__wrapper">
     @foreach ($cards as $card)
       @include('components.card.index', $card)
     @endforeach
-  </div>
+  </ul>
 </section>

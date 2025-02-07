@@ -3,7 +3,6 @@
   position: absolute;
   left: 0;
   right: 0;
-  background-color: $c-arrow;
 
   &__container {
     position: relative;
@@ -26,6 +25,13 @@
     @media (min-width: $xxl-min) {
       justify-content: space-between;
       margin: 44px 59px 0 52px;
+    }
+
+    @media (min-width: $xxxl-min) {
+      max-width: 1320px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 

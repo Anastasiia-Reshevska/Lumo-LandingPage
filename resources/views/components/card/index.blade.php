@@ -1,4 +1,4 @@
-<section class="card">
+<li class="card">
   <div class="card__image">
     <img src="{{ $src ?? '' }}" class="{{ $img_class ?? '' }}" alt="" loading="lazy"/>
   </div>
@@ -12,4 +12,4 @@
       <div class="arrow__direction arrow__direction--grey-medium"></div>
     </div>
   </a>
-</section>
+</li>

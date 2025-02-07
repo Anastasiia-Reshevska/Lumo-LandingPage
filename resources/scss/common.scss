@@ -163,4 +163,11 @@ body {
   @media (min-width: $xl-min) {
     padding: 0 60px;
   }
+
+  @media (min-width: $xxl-min) {
+    max-width: 1320px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

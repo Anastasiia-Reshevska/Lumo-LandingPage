@@ -13,6 +13,7 @@ $md-min: 768px;
 $lg-min: 992px;
 $xl-min: 1200px;
 $xxl-min: 1400px;
+$xxxl-min: 1500px;
 
 $xs-max: 575px;
 $sm-max: 767px;
@@ -20,17 +21,16 @@ $md-max: 991px;
 $lg-max: 1199px;
 
 // FONT
+$f-size-title-xs: 30px;
+$f-size-subtitle-xs: 24px;
+$f-size-subtitle-sm: 32px;
+$f-size-subtitle-m: 36px;
+$f-size-subtitle-lm: 46px;
+$f-size-subtitle-xxl: 64px;
 $f-size-nav-xs: 10px;
 $f-size-nav-ml: 20px;
 $f-size-text-xs: 12px;
 $f-size-text-sm: 14px;
 $f-size-text-ml: 16px;
-$f-size-title-xs: 30px;
-$f-size-subtitle-xs: 24px;
-$f-size-subtitle-sm: 32px;
-$f-size-subtitle-m: 36px;
-$f-size-subtitle-lg: 46px;
-$f-size-subtitle-xxl: 64px;
-
 
 $font-primary: 'Montserrat', Arial, sans-serif;

@@ -1,7 +1,7 @@
 .winterfest-promo {
   @media (min-width: $md-min) {
     margin-bottom: 37px;
-  } 
+  }
 
   @media (min-width: $xl-min) {
     display: flex;
@@ -10,7 +10,7 @@
     margin-top: 71px;
     margin-bottom: 92px;
   }
-  
+
   /* Content*/
   &__content {
     display: flex;
@@ -44,7 +44,7 @@
     @media (min-width: $sm-max) {
       padding: 0;
       margin-top: 59px;
-      font-size: $f-size-subtitle-lg;
+      font-size: $f-size-subtitle-lm;
     }
 
     @media (min-width: $md-max) {

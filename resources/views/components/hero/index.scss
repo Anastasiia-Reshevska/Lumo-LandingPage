@@ -13,6 +13,16 @@
     padding-top: 0;
   }
 
+  &__wrapper-content {
+    @media (min-width: $md-min) {
+      margin-left: auto;
+    }
+
+    @media (min-width: $xxl-min) {
+      width: 50%;
+    }
+  }
+
   &__content {
     margin-top: 35px;
 
@@ -35,7 +45,12 @@
     }
 
     @media (min-width: $xl-min) {
-      margin-left: 60px;
+      padding-left: 60px;
+    }
+
+    @media (min-width: $xxl-min) {
+      max-width: 720px;
+      margin-left: auto;
     }
   }
 
@@ -66,7 +81,7 @@
       position: absolute;
       width: 621px;
       padding-left: 21px;
-      font-size: $f-size-subtitle-lg;
+      font-size: $f-size-subtitle-lm;
       text-align: center;
       line-height: 1.1;
     }
@@ -162,13 +177,13 @@
     padding-left: 20px;
 
     @media (min-width: $md-min) and (max-width: $md-max) {
-        display: none;
+      display: none;
     }
 
     &:hover {
-        background-color: $c-info-hover;
-        border-color: $c-info-hover;
-        transition: background-color 0.33s linear;
+      background-color: $c-info-hover;
+      border-color: $c-info-hover;
+      transition: background-color 0.33s linear;
     }
 
     .arrow {
@@ -177,7 +192,14 @@
     }
   }
 
-/* Image*/
+  /* Image*/
+  &__image-wrapper {
+    @media (min-width: $xxl-min) {
+      width: 50%;
+      background-color: #479cfc;
+    }
+  }
+
   &__image {
     @media (min-width: $md-min) {
       position: relative;
@@ -188,7 +210,10 @@
       height: 904px;
       width: 536px;
       background: $c-info-hover;
-      border-radius: 58px;
+    }
+
+    @media (min-width: $md-min) and (max-width: $xl-min) {
+      border-radius: 58px 0 0 58px;
     }
 
     @media (min-width: $lg-min) {
@@ -199,6 +224,10 @@
 
     @media (min-width: $xxl-min) {
       width: 710px;
+    }
+
+    @media (min-width: $xxl-min) {
+      max-width: 720px;
     }
 
     &::before {

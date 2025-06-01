@@ -103,24 +103,7 @@
 
   /* Button*/
   &__button {
-    display: block;
     width: 57px;
     height: 57px;
-    margin-top: auto;
-    background-color: $c-info-hover;
-    border-radius: 50%;
-
-    &:hover {
-      background-color: $c-primary;
-      transition: background-color 0.33s linear;
-    }
-
-    &:hover {
-      .arrow__direction,
-      .arrow__direction::before,
-      .arrow__direction::after {
-        background-color: $c-arrow;
-      }
-    }
   }
 }

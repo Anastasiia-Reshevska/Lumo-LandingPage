@@ -1,0 +1,32 @@
+.collection-preview {
+  &__list {
+    padding-left: 0;
+
+    @media (min-width: $md-min) {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $xl-min) {
+      max-width: unset;
+    }
+  }
+
+  &__title {
+    margin: 39px 0 22px;
+    font-weight: 900;
+    font-size: $f-size-subtitle-sm;
+    color: $c-primary;
+    text-align: center;
+
+    @media (min-width: $md-min) {
+      margin: 64px 0 52px;
+      font-size: $f-size-subtitle-lm;
+    }
+
+    @media (min-width: $xl-min) {
+      margin: 97px 0 80px;
+      text-align: start;
+    }
+  }
+}

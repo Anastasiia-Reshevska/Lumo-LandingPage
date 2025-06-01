@@ -48,6 +48,26 @@ body {
   border: $c-primary;
 }
 
+.btn-circle {
+  display: block;
+  margin-top: auto;
+  background-color: $c-info-hover;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $c-primary;
+    transition: background-color 0.33s linear;
+  }
+
+  &:hover {
+    .arrow__direction,
+    .arrow__direction::before,
+    .arrow__direction::after {
+      background-color: $c-arrow;
+    }
+  }
+}
+
 .arrow {
   position: absolute;
   cursor: pointer;
@@ -126,7 +146,63 @@ body {
   }
 }
 
+.arrow__direction--grey-color {
+  background-color: $c-primary;
+
+  &::after,
+  &::before {
+    height: 2px;
+    background-color: $c-primary;
+  }
+}
+
 .arrow__direction--grey-medium {
+  top: 13px;
+  left: 9px;
+  width: 11px;
+  height: 2px;
+
+  @media (min-width: $md-min) {
+    top: 21px;
+    left: 11px;
+    width: 18px;
+  }
+
+  &::after,
+  &::before {
+    top: -2px;
+    right: -2px;
+    width: 7px;
+    height: 2px;
+    background-color: $c-primary;
+
+    @media (min-width: $md-min) {
+      width: 11px;
+    }
+  }
+
+  &::after {
+    top: -2px;
+    right: -1px;
+
+    @media (min-width: $md-min) {
+      top: -3px;
+      right: -2px;
+    }
+  }
+
+  &::before {
+    top: 2px;
+    right: -1px;
+
+    @media (min-width: $md-min) {
+      top: 4px;
+      right: -2px;
+    }
+  }
+}
+
+.arrow__direction--grey-small {
   top: 27px;
   left: 16px;
   width: 22px;

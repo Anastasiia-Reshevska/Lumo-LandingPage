@@ -1,4 +1,10 @@
 .collection-preview {
+  margin-bottom: 29px;
+
+  @media (min-width: $lg-min) {
+    margin-bottom: 70px;
+  }
+
   &__list {
     padding-left: 0;
 

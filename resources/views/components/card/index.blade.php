@@ -8,7 +8,7 @@
     <p class="card__text">{{ $text ?? '' }}</p>
   </div>
   <a href="" class="card__button btn-circle" aria-label="Find out more details">
-    <div class="arrow arrow_size-l" aria-hidden="true">
+    <div class="arrow arrow__size-l" aria-hidden="true">
       <div class="arrow__direction arrow__direction--grey-color arrow__direction--grey-medium"></div>
     </div>
   </a>

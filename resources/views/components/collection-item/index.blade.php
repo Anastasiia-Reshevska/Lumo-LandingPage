@@ -9,7 +9,7 @@
       <p class="collection-item__title">{{ $title ?? '' }}</p>
       <a href="{{ $link ?? '#' }}" class="collection-item__button btn-circle" aria-label="Find out more details">
         <div class="arrow arrow--small" aria-hidden="true">
-          <div class="arrow__direction arrow__direction--grey-color arrow__direction--grey-medium"></div>
+          <div class="arrow__direction arrow__direction--grey-color arrow__direction--grey-small"></div>
         </div>
       </a>
     </div>

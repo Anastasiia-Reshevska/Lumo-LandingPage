@@ -13,4 +13,5 @@
     @include ('components.discount.index')
     @include ('components.collection-preview.index')
     @include ('components.venue-intro.index')
+    @include ('components.booking-form.index')
 @endsection

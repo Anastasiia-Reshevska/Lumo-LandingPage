@@ -23,11 +23,13 @@ $xll-max: 1399px;
 
 // FONT
 $f-size-title-xs: 30px;
+$f-size-title-m: 40px;
 $f-size-subtitle-xs: 24px;
 $f-size-subtitle-sm: 32px;
 $f-size-subtitle-m: 36px;
 $f-size-subtitle-lm: 46px;
 $f-size-subtitle-xxl: 64px;
+$f-size-label-xxs: 7px;
 $f-size-nav-xs: 10px;
 $f-size-nav-ml: 20px;
 $f-size-text-xs: 12px;
@@ -35,3 +37,9 @@ $f-size-text-sm: 14px;
 $f-size-text-ml: 16px;
 
 $font-primary: 'Montserrat', Arial, sans-serif;
+
+// MIXINS
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

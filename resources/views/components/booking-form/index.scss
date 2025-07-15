@@ -1,4 +1,14 @@
 .booking-form {
+  margin-bottom: 65px;
+
+  @media (min-width: $md-min) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $lg-min) {
+    padding-bottom: 28px;
+  }
+
   &__wrapper {
     padding-bottom: 80px;
     background-color: $c-arrow;
@@ -174,7 +184,8 @@
   .book__btn-additional {
     display: block;
     margin-right: auto;
-    @include size(340px, 64px);
+    max-width: 340px;
+    @include size(100%, 64px);
     font-size: $f-size-text-ml;
 
     @media (min-width: $md-min) {

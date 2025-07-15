@@ -60,6 +60,7 @@ body {
   }
 
   &:hover {
+
     .arrow__direction,
     .arrow__direction::before,
     .arrow__direction::after {
@@ -79,18 +80,15 @@ body {
   }
 
   &--small {
-    width: 24px;
-    height: 24px;
+    @include size(24px, 24px);
   }
 
   &--medium {
-    width: 35px;
-    height: 35px;
+    @include size(35px, 35px);
   }
 
   &--large {
-    width: 49px;
-    height: 49px;
+    @include size(49px, 49px);
   }
 
   &__direction {
@@ -118,8 +116,7 @@ body {
     &--white {
       top: 17px;
       left: 16px;
-      width: 9px;
-      height: 1px;
+      @include size(9px, 1px);
       background-color: $c-arrow;
 
       @media (max-width: $md-max) {
@@ -134,8 +131,7 @@ body {
       &::before {
         top: -2px;
         right: -2px;
-        width: 7px;
-        height: 1px;
+        @include size(7px, 1px);
         background-color: $c-arrow;
       }
 
@@ -161,15 +157,13 @@ body {
     }
 
     &--grey-medium {
-      width: 21px;
-      height: 2px;
+      @include size(21px, 2px);
 
       &::after,
       &::before {
         top: -2px;
         right: -2px;
-        width: 12px;
-        height: 2px;
+        @include size(12px, 2px);
         background-color: $c-primary;
       }
 
@@ -188,8 +182,7 @@ body {
     &--grey-small {
       top: 13px;
       left: 9px;
-      width: 11px;
-      height: 2px;
+      @include size(11px, 2px);
 
       @media (min-width: $md-min) {
         top: 21px;
@@ -201,8 +194,7 @@ body {
       &::before {
         top: -2px;
         right: -2px;
-        width: 7px;
-        height: 2px;
+        @include size(7px, 2px);
         background-color: $c-primary;
 
         @media (min-width: $md-min) {

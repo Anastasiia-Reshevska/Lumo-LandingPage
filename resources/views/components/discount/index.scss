@@ -1,18 +1,15 @@
 .discount {
-  /* Image*/
   &__image {
     @media (min-width: $lg-min) {
       content: url('/resources/images/girl-with-mobile.webp');
       position: absolute;
       left: 16px;
       bottom: 0;
-      width: 364px;
-      height: 388px;
+      @include size(364px, 388px);
     }
 
     @media (min-width: $xl-min) {
-      width: 548px;
-      height: 590px;
+      @include size(548px,  590px);
     }
   }
 
@@ -29,17 +26,14 @@
     @media (min-width: $lg-min) {
       position: relative;
       display: flex;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding: 30px 132px 30px 121px;
     }
 
     @media (min-width: $xl-min) {
-      padding-top: 92px;
-      padding-bottom: 94px;
+      padding: 92px 132px 94px 121px;
     }
   }
 
-  /* Content*/
   &__content {
     @media (min-width: $lg-min) {
       display: block;
@@ -64,8 +58,7 @@
     color: #FFFF;
 
     @media (min-width: $md-min) {
-      padding-left: 10px;
-      padding-right: 16px;
+      padding: 0 16px 0 10px;
     }
 
     @media (min-width: $lg-min) {
@@ -112,11 +105,9 @@
     }
   }
 
-  /* Button */
   &__btn-additional {
     z-index: 2;
-    width: 223px;
-    height: 50px;
+    @include size(223px, 50px);
     margin-left: auto;
 
     &:hover {

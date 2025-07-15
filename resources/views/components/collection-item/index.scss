@@ -43,23 +43,21 @@ li {
       }
 
       .collection-item__content {
-        padding: 0 43px 0;
-        padding-left: 0;
-        padding-right: 43px;
         flex-direction: column;
         flex-shrink: 0;
         order: 1;
+        padding: 0 43px 0;
       }
     }
   }
 
   &__content {
-    margin: 14px 0;
     padding-left: 23px;
+    margin: 14px 0;
 
     @media (min-width: $md-min) {
-      margin: 32px 0 25px;
       padding-left: 43px;
+      margin: 32px 0 25px;
     }
 
     @media (min-width: $xl-min) {
@@ -73,8 +71,7 @@ li {
 
     img {
       @media (min-width: $md-min) {
-        width: 98px;
-        height: 98px;
+        @include size(98px, 98px);
       }
     }
   }
@@ -110,18 +107,15 @@ li {
 
   &__button {
     position: relative;
-    width: 29px;
-    height: 29px;
+    @include size(29px, 29px);
 
     @media (min-width: $md-min) {
-      width: 44px;
-      height: 44px;
+      @include size(44px, 44px);
     }
   }
 
   &__image {
-    height: 100%;
-    width: 100%;
+    @include size(100%, 100%);
     object-fit: cover;
     border-radius: 40px;
 
@@ -152,8 +146,7 @@ li {
 
     img {
       max-width: 100%;
-      width: 371px;
-      height: 298px;
+      @include size(371px, 298px);
       object-fit: cover;
       border-radius: 40px;
 
@@ -162,8 +155,7 @@ li {
       }
 
       @media (min-width: $xl-min) and (max-width: $xll-max) {
-        width: 290px;
-        height: auto;
+        @include size(290px, auto);
       }
 
       @media (min-width: $xxl-min) {

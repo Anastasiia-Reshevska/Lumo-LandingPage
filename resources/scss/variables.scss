@@ -3,9 +3,9 @@ $c-primary: #333c4f;
 $c-info-hover: #479cfc;
 $c-text: #000000;
 $c-text-btn: aliceblue;
-$c-arrow: #FFFF;
-$c-subtitle: #9697AB;
-$c-background:#fcfcfc;
+$c-arrow: #ffff;
+$c-subtitle: #9697ab;
+$c-background: #fcfcfc;
 
 // MEDIA QUERIES
 $sm-min: 576px;
@@ -36,7 +36,7 @@ $f-size-text-xs: 12px;
 $f-size-text-sm: 14px;
 $f-size-text-ml: 16px;
 
-$font-primary: 'Montserrat', Arial, sans-serif;
+$font-primary: "Montserrat", Arial, sans-serif;
 
 // MIXINS
 @mixin size($width, $height) {

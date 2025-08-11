@@ -9,18 +9,18 @@
     margin-bottom: 49px;
   }
 
-    img {
-      position: absolute;
-      left: 0;
-      right: 0;
-      @include size(100%, 100%);
-      border-radius: 40px;
-      object-fit: cover;
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    @include size(100%, 100%);
+    border-radius: 40px;
+    object-fit: cover;
 
-      @media (min-width: $xl-min) {
-        height: 403px;
-      }
+    @media (min-width: $xl-min) {
+      height: 403px;
     }
+  }
 
   &__container {
     position: relative;

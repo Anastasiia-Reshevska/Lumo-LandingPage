@@ -46,12 +46,18 @@ li {
         flex-direction: column;
         flex-shrink: 0;
         order: 1;
-        padding: 0 43px 0;
+        padding: 0;
+
+        @media (min-width: $sm-min) {
+          flex-basis: unset;
+          padding-right: 43px;
+        }
       }
     }
   }
 
   &__content {
+    flex-basis: 38%;
     padding-left: 23px;
     margin: 14px 0;
 
@@ -70,6 +76,8 @@ li {
     }
 
     img {
+      flex-shrink: 50%;
+
       @media (min-width: $md-min) {
         @include size(98px, 98px);
       }
@@ -115,7 +123,7 @@ li {
   }
 
   &__image {
-    @include size(100%, 100%);
+    @include size(191px, 100%);
     object-fit: cover;
     border-radius: 40px;
 

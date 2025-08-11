@@ -139,7 +139,8 @@
       }
     }
 
-    &--name, &--email {
+    &--name,
+    &--email {
       @media (min-width: $lg-min) {
         flex-basis: 52%;
         height: 100%;
@@ -193,7 +194,7 @@
       font-size: $f-size-text-xs;
     }
 
-     @media (min-width: $lg-min) {
+    @media (min-width: $lg-min) {
       width: 223px;
       margin-top: 12px;
     }
@@ -208,4 +209,8 @@
       left: 17px;
     }
   }
+}
+
+.booking-form__item input[type=text]:focus {
+  height: unset;
 }

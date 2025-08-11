@@ -224,7 +224,7 @@
 
     &::before {
       @media (min-width: $md-min) {
-        content: '';
+        content: "";
         position: absolute;
         @include size(415px, 611px);
         bottom: 80px;
@@ -240,18 +240,18 @@
 
     &::after {
       @media (min-width: $md-min) {
-        content: '';
+        content: "";
         position: absolute;
         @include size(518px, 776px);
         right: 0;
         bottom: 0;
-        background: url('/resources/images/hero.webp') no-repeat;
+        background: url("/resources/images/hero.webp") no-repeat;
       }
 
       @media (min-width: $lg-min) {
         @include size(566px, 759px);
         margin-left: 10px;
-        background-image: url('/resources/images/hero_desktop.webp');
+        background-image: url("/resources/images/hero_desktop.webp");
       }
     }
   }

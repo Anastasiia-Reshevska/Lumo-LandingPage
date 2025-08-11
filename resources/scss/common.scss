@@ -60,7 +60,6 @@ body {
   }
 
   &:hover {
-
     .arrow__direction,
     .arrow__direction::before,
     .arrow__direction::after {
@@ -98,7 +97,7 @@ body {
 
     &::after,
     &::before {
-      content: '';
+      content: "";
       position: absolute;
     }
 
@@ -107,7 +106,7 @@ body {
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
       transform: rotate(-45deg);
@@ -137,12 +136,12 @@ body {
 
       &::after {
         top: -2px;
-        right: -2px;
+        right: -2.2px;
       }
 
       &::before {
         top: 2px;
-        right: -2px;
+        right: -2.2px;
       }
     }
 
@@ -175,7 +174,6 @@ body {
       &::before {
         top: 4px;
         right: -1px;
-
       }
     }
 
